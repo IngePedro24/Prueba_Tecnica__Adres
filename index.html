@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Filtros para Formularios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Menú de Filtros para Formularios</h1>
+  </header>
+
+  <div class="grupo">
+
+  <div class="container">
+    <!-- Formulario -->
+    <div class="formulario">
+      <h2>Formulario de Registro</h2>
+      <form id="formAgregar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+  
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+  
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required><br>
+  
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" name="profesion" required><br>
+  
+        <input type="submit" value="Agregar Registro">
+      </form>
+    </div>
+
+    <div class="container-2">
+        <!-- Menú de Filtros -->
+        <div class="filtro">
+        <h2>Filtros</h2>
+        <select id="filtroCampo">
+            <option value="nombre">Nombre</option>
+            <option value="edad">Edad</option>
+            <option value="email">Email</option>
+            <option value="pais">País</option>
+            <option value="profesion">Profesión</option>
+        </select>
+        <input type="text" id="filtroValor" placeholder="Valor de Búsqueda">
+        <button id="btnFiltrar">Filtrar</button>
+        <button id="btnReset">Reset</button>
+        </div>
+
+        <!-- Lista de Registros -->
+        <div class="registros">
+        <h2>Registros</h2>
+        <ul id="listaRegistros"></ul>
+        </div>
+    </div>
+
+    <!-- Historial de Cambios -->
+    <div class="historial">
+      <h2>Historial de Cambios</h2>
+      <ul id="historialCambios"></ul>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
